@@ -25,6 +25,4 @@ RUN pnpm add serve
 # Expose port 5000 for the server
 EXPOSE 5173
 
-# Serve the built site, binding to 0.0.0.0
-#CMD ["npm", "serve", "-s", "docs/.vitepress/dist", "-l", "5000", "--host", "0.0.0.0"]
 CMD ["pnpm", "run", "docs:dev"]
