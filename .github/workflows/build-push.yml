@@ -6,7 +6,7 @@ on:
  workflow_dispatch:
 
 env:
- IMAGE_NAME: ${{ env.IMAGE_NAME }}
+ IMAGE_NAME: custom-doc-website
  DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
  
 jobs:
